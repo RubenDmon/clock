@@ -1,0 +1,114 @@
+:root {
+    --fontsize--2: clamp(0.40rem, calc(0.39rem + 0.04vw), 0.42rem);
+    --fontsize--1: clamp(0.44rem, calc(0.41rem + 0.18vw), 0.56rem);
+    --fontsize-0: clamp(0.50rem, calc(0.43rem + 0.37vw), 0.75rem);
+    --fontsize-1: clamp(0.56rem, calc(0.43rem + 0.65vw), 1.00rem);
+    --fontsize-2: clamp(0.63rem, calc(0.43rem + 1.04vw), 1.33rem);
+    --fontsize-3: clamp(0.71rem, calc(0.40rem + 1.58vw), 1.78rem);
+    --fontsize-4: clamp(0.80rem, calc(0.34rem + 2.32vw), 2.37rem);
+    --fontsize-5: clamp(0.90rem, calc(0.23rem + 3.34vw), 3.16rem);
+    
+    --clr-white: #eee;
+    --clr-black: #141114;
+  
+    --primary-clr: var(--clr-white);
+    --secondary-clr: var(--clr-black);
+  
+    --font-family--cherry: 'Cherry Bomb One', cursive;
+    --font-family--tektur: 'Tektur', cursive;
+  }
+
+
+  body{
+    margin:0;
+    background-color: var(--primary-clr);
+    overflow-x: hidden;
+  }
+
+  .dark-theme {
+    --primary-clr: var(--clr-black);
+    --secondary-clr: var(--clr-white);
+  }
+  
+  .navbar {
+    background-color: var(--primary-clr);
+    transition: all 0.2s ease-in;
+    width: 100vw;
+    height: 5rem;
+    margin:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar h3{
+    color: var(--secondary-clr);
+    text-decoration: none;
+    font-size: var(--fontsize-5);
+    font-family: var(--font-family--cherry);
+    user-select: none;
+  }
+  .navbar button{
+    height: 5rem;
+    width: 5rem;
+    background-color:transparent;
+    color:var(--secondary-clr);
+    border: none;
+    transition: all 0.2s ease-in;
+    margin:0;
+    cursor: pointer;
+  }
+  .navbar button i{
+    font-size: 2rem;
+    /* transition: all 0.4s ease-in; */
+  }
+  .navbar button:hover{
+    color:rgb(103, 103, 103);
+    transform: rotate(45deg) scale(1.25);
+    
+    /* z-index: 0; */
+  }
+  .line{
+    height: 0.1rem;
+    width: 100vw;
+    background-color: var(--secondary-clr);
+  }
+
+  .container{
+    margin-top: 5rem;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--secondary-clr);
+    font-family: var(--font-family--tektur);
+    font-size: var(--fontsize-4);
+    transition: all 0.2s ease-in;
+    user-select: none;
+  }
+  .container h1{
+font-family: var(--font-family--cherry);
+font-size: var(--fontsize-5);
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 2rem;
+    background-color: var(--primary-clr);
+    color: var(--secondary-clr);
+  }
+  footer a{
+    color: var(--secondary-clr);
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+  }
+  footer a:hover{
+    color: purple;
+  }
+
